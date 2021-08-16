@@ -11,7 +11,7 @@
         <!--Kaart-->
         <scene sceneID="8Jm-vA-F24">
             <objects>
-                <viewController id="Los-n1-gj4" customClass="MapViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Los-n1-gj4" customClass="MapViewController" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kbu-34-4dM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,13 +36,13 @@
         <!--Centra-->
         <scene sceneID="661-2F-pkV">
             <objects>
-                <tableViewController id="ygV-aj-lG0" customClass="CentraTableViewController" sceneMemberID="viewController">
+                <tableViewController id="ygV-aj-lG0" customClass="CentraTableViewController" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWk-Wm-edO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VCTableViewCell" rowHeight="107" id="XoM-Ts-pJf" customClass="CentrumTableViewCell" customModule="werkstuk_1_yoni_celen" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CentrumTableViewCell" rowHeight="107" id="XoM-Ts-pJf" customClass="CentrumTableViewCell" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XoM-Ts-pJf" id="S3n-oL-0NA">
@@ -78,11 +78,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="afbeelding" destination="slg-Z9-e3V" id="PB4-ke-Al4"/>
                                     <outlet property="cityLabel" destination="1Vt-MB-f3g" id="wE4-hN-6zP"/>
-                                    <outlet property="gemeenteLabel" destination="1Vt-MB-f3g" id="zqn-Lr-Ted"/>
                                     <outlet property="imgView" destination="slg-Z9-e3V" id="5cz-vb-fsQ"/>
-                                    <outlet property="naamLabel" destination="vcv-1X-1yq" id="yyW-Z4-ySv"/>
                                     <outlet property="nameLabel" destination="vcv-1X-1yq" id="ZuF-ds-PVY"/>
                                     <segue destination="JRW-rm-9Xt" kind="show" identifier="detail" id="aCq-YQ-EYn"/>
                                 </connections>
@@ -96,7 +93,7 @@
                     <navigationItem key="navigationItem" title="Centra" id="yCj-wd-3RX">
                         <barButtonItem key="rightBarButtonItem" title="add" image="plus" catalog="system" id="mh2-qo-Atv">
                             <connections>
-                                <segue destination="crJ-z9-WV9" kind="presentation" id="HYp-vo-aCy"/>
+                                <segue destination="crJ-z9-WV9" kind="presentation" id="8by-ca-WJQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -108,7 +105,7 @@
         <!--Centrum Detail View Controller-->
         <scene sceneID="Yf1-Ha-m3R">
             <objects>
-                <viewController id="JRW-rm-9Xt" customClass="CentrumDetailViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JRW-rm-9Xt" customClass="CentrumDetailViewController" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1aD-Uu-3HK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,16 +124,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsN-ek-PO7">
-                                <rect key="frame" x="305" y="150" width="89" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gemeente" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-s7-oPi">
-                                <rect key="frame" x="180" y="179" width="214" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gemeente" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-s7-oPi">
+                                <rect key="frame" x="315" y="179" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -167,16 +156,28 @@
                                     <outletCollection property="gestureRecognizers" destination="mAP-hp-YQe" appends="YES" id="nMP-Mg-taf"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFR-ki-AEq">
+                                <rect key="frame" x="375" y="150" width="19" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4vd-CP-gU5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OH9-s7-oPi" firstAttribute="top" secondItem="1aD-Uu-3HK" secondAttribute="topMargin" constant="91" id="Fh3-1C-cqi"/>
+                            <constraint firstItem="4vd-CP-gU5" firstAttribute="trailing" secondItem="aFR-ki-AEq" secondAttribute="trailing" constant="20" id="PKa-Pi-bvm"/>
+                            <constraint firstItem="4vd-CP-gU5" firstAttribute="trailing" secondItem="OH9-s7-oPi" secondAttribute="trailing" constant="20" id="XMs-Zs-aH5"/>
+                            <constraint firstItem="aFR-ki-AEq" firstAttribute="top" secondItem="1aD-Uu-3HK" secondAttribute="topMargin" constant="62" id="XYC-cb-QcE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5Lp-Sz-9xb"/>
                     <connections>
                         <outlet property="cityLabel" destination="OH9-s7-oPi" id="I82-PY-vDg"/>
                         <outlet property="mapView" destination="u7x-4A-JrB" id="F64-66-qbj"/>
                         <outlet property="nameLabel" destination="bi7-bX-464" id="llo-na-CCP"/>
-                        <outlet property="numberLabel" destination="wsN-ek-PO7" id="suK-J4-X0G"/>
+                        <outlet property="numberLabel" destination="aFR-ki-AEq" id="GO6-YK-iyQ"/>
                         <outlet property="phoneNrLabel" destination="GhJ-DB-wwH" id="h1s-ih-EFK"/>
                         <outlet property="photoView" destination="OtO-4Y-VVo" id="D5L-N2-NFm"/>
                         <outlet property="postalCodeLabel" destination="qzX-qB-T3A" id="Er5-uV-HU3"/>
@@ -211,7 +212,7 @@
         <!--Large Image View Controller-->
         <scene sceneID="hxy-qJ-2jx">
             <objects>
-                <viewController id="WYs-K1-P7q" customClass="LargeImageViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WYs-K1-P7q" customClass="LargeImageViewController" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNB-d7-XMe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,6 +220,10 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-2w-HfO">
                                 <rect key="frame" x="20" y="285" width="374" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hF6-7s-ghd" appends="YES" id="lVb-Zo-OJp"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pJ8-gv-5FL"/>
@@ -230,6 +235,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsm-cI-DBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hF6-7s-ghd"/>
             </objects>
             <point key="canvasLocation" x="1252" y="-1299"/>
         </scene>
@@ -254,7 +260,7 @@
         <!--Centrum toevoegen-->
         <scene sceneID="o8m-uC-PAQ">
             <objects>
-                <viewController id="9i5-F0-NvZ" customClass="AddCentrumViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9i5-F0-NvZ" customClass="AddCentrumViewController" customModule="werkstuk1_ios_2021_YoniCelen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jDt-sz-CL9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,10 +270,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="centrumNaam:" destination="qeP-N1-NNf" eventType="editingDidEnd" id="5ib-7O-yvw"/>
-                                    <action selector="naamTextField:" destination="qeP-N1-NNf" eventType="editingDidEnd" id="Xnh-Cx-6xz"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="straat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4b-Gu-k05">
                                 <rect key="frame" x="34" y="153" width="216" height="34"/>
@@ -319,19 +321,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityField" destination="Id9-bh-Ddn" id="N7j-vG-sJQ"/>
-                        <outlet property="gemeenteTF" destination="Id9-bh-Ddn" id="pZ9-by-SGb"/>
-                        <outlet property="naamTF" destination="WfD-WL-2fa" id="xVT-dc-Fyy"/>
                         <outlet property="nameField" destination="WfD-WL-2fa" id="fxe-42-RK8"/>
                         <outlet property="numberField" destination="xe3-i7-iYF" id="O09-ay-Jbc"/>
-                        <outlet property="nummerTF" destination="xe3-i7-iYF" id="7bo-zm-aF3"/>
-                        <outlet property="opslaan" destination="ocC-oe-RYv" id="OTs-gf-zAK"/>
                         <outlet property="phoneNrField" destination="anb-6J-IvW" id="8L8-QD-sPd"/>
                         <outlet property="postalCodeField" destination="FKa-5A-ntV" id="ixF-Ja-A4Y"/>
-                        <outlet property="postcodeTF" destination="FKa-5A-ntV" id="y3c-ky-5Oj"/>
                         <outlet property="save" destination="ocC-oe-RYv" id="pp4-CK-54u"/>
-                        <outlet property="straatTF" destination="n4b-Gu-k05" id="M3Q-nw-N3f"/>
                         <outlet property="streetField" destination="n4b-Gu-k05" id="Ldl-mV-HbY"/>
-                        <outlet property="telefoonnummerTF" destination="anb-6J-IvW" id="L7e-n6-Scv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lk-wz-Yap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -342,7 +337,6 @@
         <!--Centra-->
         <scene sceneID="CVu-iG-GZm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iUU-Gv-tT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yhp-kq-rq9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Centra" id="tS8-qw-hET"/>
                     <toolbarItems/>
@@ -356,6 +350,7 @@
                         <segue destination="ygV-aj-lG0" kind="relationship" relationship="rootViewController" id="gwb-Q5-QWi"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUU-Gv-tT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1400" y="-1299"/>
         </scene>

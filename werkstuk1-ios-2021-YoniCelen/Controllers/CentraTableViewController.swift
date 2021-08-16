@@ -23,21 +23,24 @@ class CentraTableViewController: UITableViewController {
         centra.append(centrum2)
         centra.append(centrum3)
         centra.append(centrum4)
+        print(centra.count)
         
     }
     
     override func viewDidLoad() {
-        
+        print("loaded")
         loadCentra()
         super.viewDidLoad()
     }
 
 
     override func numberOfSections(in tableView: UITableView) -> Int {
+        print("sections")
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("count")
         return centra.count
     }
 
