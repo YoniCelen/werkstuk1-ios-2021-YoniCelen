@@ -1,24 +1,370 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cv5-20-ZkU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Kaart-->
+        <scene sceneID="8Jm-vA-F24">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="Los-n1-gj4" customClass="MapViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kbu-34-4dM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="e1X-Nl-8Id">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tsz-1O-Rrq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Kaart" id="k5f-hY-Pvx"/>
+                    <connections>
+                        <outlet property="mapView" destination="e1X-Nl-8Id" id="cQS-Yx-UHb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ld-dR-Yxp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2271" y="-535"/>
+        </scene>
+        <!--Centra-->
+        <scene sceneID="661-2F-pkV">
+            <objects>
+                <tableViewController id="ygV-aj-lG0" customClass="CentraTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vWk-Wm-edO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VCTableViewCell" rowHeight="107" id="XoM-Ts-pJf" customClass="CentrumTableViewCell" customModule="werkstuk_1_yoni_celen" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="107"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XoM-Ts-pJf" id="S3n-oL-0NA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcv-1X-1yq">
+                                            <rect key="frame" x="20" y="11" width="204" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gemeente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vt-MB-f3g">
+                                            <rect key="frame" x="20" y="57" width="204" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="slg-Z9-e3V">
+                                            <rect key="frame" x="296" y="13" width="100" height="81"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="aia-CK-3SK"/>
+                                                <constraint firstAttribute="width" constant="100" id="yCk-li-e5x"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="slg-Z9-e3V" secondAttribute="bottom" constant="2" id="J1z-81-E2p"/>
+                                        <constraint firstItem="slg-Z9-e3V" firstAttribute="trailing" secondItem="S3n-oL-0NA" secondAttribute="trailingMargin" constant="2" id="SiH-ny-QcB"/>
+                                        <constraint firstItem="slg-Z9-e3V" firstAttribute="top" secondItem="S3n-oL-0NA" secondAttribute="topMargin" constant="2" id="TVb-9P-qQZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="afbeelding" destination="slg-Z9-e3V" id="PB4-ke-Al4"/>
+                                    <outlet property="cityLabel" destination="1Vt-MB-f3g" id="wE4-hN-6zP"/>
+                                    <outlet property="gemeenteLabel" destination="1Vt-MB-f3g" id="zqn-Lr-Ted"/>
+                                    <outlet property="imgView" destination="slg-Z9-e3V" id="5cz-vb-fsQ"/>
+                                    <outlet property="naamLabel" destination="vcv-1X-1yq" id="yyW-Z4-ySv"/>
+                                    <outlet property="nameLabel" destination="vcv-1X-1yq" id="ZuF-ds-PVY"/>
+                                    <segue destination="JRW-rm-9Xt" kind="show" identifier="detail" id="aCq-YQ-EYn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ygV-aj-lG0" id="UiZ-N0-YpH"/>
+                            <outlet property="delegate" destination="ygV-aj-lG0" id="3eH-Pa-CbG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Centra" id="yCj-wd-3RX">
+                        <barButtonItem key="rightBarButtonItem" title="add" image="plus" catalog="system" id="mh2-qo-Atv">
+                            <connections>
+                                <segue destination="crJ-z9-WV9" kind="presentation" id="HYp-vo-aCy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBR-z1-tN1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="-1299"/>
+        </scene>
+        <!--Centrum Detail View Controller-->
+        <scene sceneID="Yf1-Ha-m3R">
+            <objects>
+                <viewController id="JRW-rm-9Xt" customClass="CentrumDetailViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1aD-Uu-3HK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Straat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2j-19-CjF">
+                                <rect key="frame" x="20" y="150" width="219" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Naam Centrum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bi7-bX-464">
+                                <rect key="frame" x="20" y="121" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nr" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wsN-ek-PO7">
+                                <rect key="frame" x="305" y="150" width="89" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gemeente" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-s7-oPi">
+                                <rect key="frame" x="180" y="179" width="214" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefoonnummer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhJ-DB-wwH">
+                                <rect key="frame" x="20" y="208" width="379" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Postcode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzX-qB-T3A">
+                                <rect key="frame" x="20" y="179" width="122" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u7x-4A-JrB">
+                                <rect key="frame" x="20" y="451" width="374" height="362"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OtO-4Y-VVo">
+                                <rect key="frame" x="87" y="280" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mAP-hp-YQe" appends="YES" id="nMP-Mg-taf"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4vd-CP-gU5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Lp-Sz-9xb"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="OH9-s7-oPi" id="I82-PY-vDg"/>
+                        <outlet property="mapView" destination="u7x-4A-JrB" id="F64-66-qbj"/>
+                        <outlet property="nameLabel" destination="bi7-bX-464" id="llo-na-CCP"/>
+                        <outlet property="numberLabel" destination="wsN-ek-PO7" id="suK-J4-X0G"/>
+                        <outlet property="phoneNrLabel" destination="GhJ-DB-wwH" id="h1s-ih-EFK"/>
+                        <outlet property="photoView" destination="OtO-4Y-VVo" id="D5L-N2-NFm"/>
+                        <outlet property="postalCodeLabel" destination="qzX-qB-T3A" id="Er5-uV-HU3"/>
+                        <outlet property="streetLabel" destination="G2j-19-CjF" id="ZG8-Zn-qQq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0U-W5-rCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mAP-hp-YQe">
+                    <connections>
+                        <segue destination="WYs-K1-P7q" kind="presentation" identifier="toLargeImageView" id="XJo-CP-jsa"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="397" y="-1299"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MFW-Sv-j9X">
+            <objects>
+                <navigationController id="crJ-z9-WV9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3uX-ix-z3h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9i5-F0-NvZ" kind="relationship" relationship="rootViewController" id="9oJ-GP-7Dh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiW-8B-7Zj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="-535"/>
+        </scene>
+        <!--Large Image View Controller-->
+        <scene sceneID="hxy-qJ-2jx">
+            <objects>
+                <viewController id="WYs-K1-P7q" customClass="LargeImageViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sNB-d7-XMe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-2w-HfO">
+                                <rect key="frame" x="20" y="285" width="374" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pJ8-gv-5FL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ohw-fq-lIv"/>
+                    <connections>
+                        <outlet property="imageView" destination="VNd-2w-HfO" id="0D3-SY-Ag3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fsm-cI-DBJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1252" y="-1299"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jVn-5n-XEf">
+            <objects>
+                <tabBarController id="cv5-20-ZkU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vnY-0l-Do1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="yhp-kq-rq9" kind="relationship" relationship="viewControllers" id="qc5-fd-a5B"/>
+                        <segue destination="Los-n1-gj4" kind="relationship" relationship="viewControllers" id="jgM-dQ-qor"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmw-8o-Kmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2270" y="-1299"/>
+        </scene>
+        <!--Centrum toevoegen-->
+        <scene sceneID="o8m-uC-PAQ">
+            <objects>
+                <viewController id="9i5-F0-NvZ" customClass="AddCentrumViewController" customModule="werkstuk_1_yoni_celen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jDt-sz-CL9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfD-WL-2fa">
+                                <rect key="frame" x="34" y="99" width="346" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="centrumNaam:" destination="qeP-N1-NNf" eventType="editingDidEnd" id="5ib-7O-yvw"/>
+                                    <action selector="naamTextField:" destination="qeP-N1-NNf" eventType="editingDidEnd" id="Xnh-Cx-6xz"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="straat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n4b-Gu-k05">
+                                <rect key="frame" x="34" y="153" width="216" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gemeente" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Id9-bh-Ddn">
+                                <rect key="frame" x="164" y="207" width="216" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nummer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xe3-i7-iYF">
+                                <rect key="frame" x="273" y="153" width="107" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="telefoonnummer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="anb-6J-IvW">
+                                <rect key="frame" x="34" y="261" width="346" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="postcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FKa-5A-ntV">
+                                <rect key="frame" x="34" y="207" width="107" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ArW-Y1-PHN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Centrum toevoegen" id="5pL-Qo-jvl">
+                        <barButtonItem key="leftBarButtonItem" title="back" image="delete.left" catalog="system" id="K7d-Vi-EIp">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="back:" destination="9i5-F0-NvZ" id="K54-l6-IHV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="save" image="plus" catalog="system" id="ocC-oe-RYv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="qeP-N1-NNf" kind="unwind" unwindAction="unwindToTable:" id="NBV-Ai-IK8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityField" destination="Id9-bh-Ddn" id="N7j-vG-sJQ"/>
+                        <outlet property="gemeenteTF" destination="Id9-bh-Ddn" id="pZ9-by-SGb"/>
+                        <outlet property="naamTF" destination="WfD-WL-2fa" id="xVT-dc-Fyy"/>
+                        <outlet property="nameField" destination="WfD-WL-2fa" id="fxe-42-RK8"/>
+                        <outlet property="numberField" destination="xe3-i7-iYF" id="O09-ay-Jbc"/>
+                        <outlet property="nummerTF" destination="xe3-i7-iYF" id="7bo-zm-aF3"/>
+                        <outlet property="opslaan" destination="ocC-oe-RYv" id="OTs-gf-zAK"/>
+                        <outlet property="phoneNrField" destination="anb-6J-IvW" id="8L8-QD-sPd"/>
+                        <outlet property="postalCodeField" destination="FKa-5A-ntV" id="ixF-Ja-A4Y"/>
+                        <outlet property="postcodeTF" destination="FKa-5A-ntV" id="y3c-ky-5Oj"/>
+                        <outlet property="save" destination="ocC-oe-RYv" id="pp4-CK-54u"/>
+                        <outlet property="straatTF" destination="n4b-Gu-k05" id="M3Q-nw-N3f"/>
+                        <outlet property="streetField" destination="n4b-Gu-k05" id="Ldl-mV-HbY"/>
+                        <outlet property="telefoonnummerTF" destination="anb-6J-IvW" id="L7e-n6-Scv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lk-wz-Yap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="qeP-N1-NNf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-535"/>
+        </scene>
+        <!--Centra-->
+        <scene sceneID="CVu-iG-GZm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUU-Gv-tT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yhp-kq-rq9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Centra" id="tS8-qw-hET"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Centra" id="xfI-40-UAd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mkp-t9-I63">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ygV-aj-lG0" kind="relationship" relationship="rootViewController" id="gwb-Q5-QWi"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-1400" y="-1299"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		B0ACE98726CA9502007F1119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE98626CA9502007F1119 /* AppDelegate.swift */; };
 		B0ACE98926CA9502007F1119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE98826CA9502007F1119 /* SceneDelegate.swift */; };
-		B0ACE98B26CA9502007F1119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE98A26CA9502007F1119 /* ViewController.swift */; };
 		B0ACE98E26CA9502007F1119 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0ACE98C26CA9502007F1119 /* Main.storyboard */; };
 		B0ACE99026CA9503007F1119 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0ACE98F26CA9503007F1119 /* Assets.xcassets */; };
 		B0ACE99326CA9503007F1119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0ACE99126CA9503007F1119 /* LaunchScreen.storyboard */; };
+		B0ACE99D26CA9614007F1119 /* Centrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE99C26CA9614007F1119 /* Centrum.swift */; };
+		B0ACE99F26CA961F007F1119 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE99E26CA961F007F1119 /* Address.swift */; };
+		B0ACE9A126CA962F007F1119 /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9A026CA962F007F1119 /* Coordinates.swift */; };
+		B0ACE9A326CA9642007F1119 /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9A226CA9642007F1119 /* CustomAnnotation.swift */; };
+		B0ACE9A526CA9653007F1119 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9A426CA9653007F1119 /* MapViewController.swift */; };
+		B0ACE9A726CA9669007F1119 /* CentraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9A626CA9669007F1119 /* CentraTableViewController.swift */; };
+		B0ACE9A926CA9679007F1119 /* CentrumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9A826CA9679007F1119 /* CentrumTableViewCell.swift */; };
+		B0ACE9AB26CA9683007F1119 /* CentrumDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9AA26CA9683007F1119 /* CentrumDetailView.swift */; };
+		B0ACE9AD26CA9695007F1119 /* LargeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9AC26CA9695007F1119 /* LargeImageViewController.swift */; };
+		B0ACE9AF26CA96AD007F1119 /* AddCentrumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0ACE9AE26CA96AD007F1119 /* AddCentrumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B0ACE98326CA9502007F1119 /* werkstuk1-ios-2021-YoniCelen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "werkstuk1-ios-2021-YoniCelen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0ACE98626CA9502007F1119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0ACE98826CA9502007F1119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B0ACE98A26CA9502007F1119 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0ACE98D26CA9502007F1119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0ACE98F26CA9503007F1119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0ACE99226CA9503007F1119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0ACE99426CA9503007F1119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0ACE99C26CA9614007F1119 /* Centrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Centrum.swift; sourceTree = "<group>"; };
+		B0ACE99E26CA961F007F1119 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		B0ACE9A026CA962F007F1119 /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		B0ACE9A226CA9642007F1119 /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		B0ACE9A426CA9653007F1119 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		B0ACE9A626CA9669007F1119 /* CentraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentraTableViewController.swift; sourceTree = "<group>"; };
+		B0ACE9A826CA9679007F1119 /* CentrumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumTableViewCell.swift; sourceTree = "<group>"; };
+		B0ACE9AA26CA9683007F1119 /* CentrumDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentrumDetailView.swift; sourceTree = "<group>"; };
+		B0ACE9AC26CA9695007F1119 /* LargeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeImageViewController.swift; sourceTree = "<group>"; };
+		B0ACE9AE26CA96AD007F1119 /* AddCentrumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCentrumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,40 @@
 		B0ACE98526CA9502007F1119 /* werkstuk1-ios-2021-YoniCelen */ = {
 			isa = PBXGroup;
 			children = (
+				B0ACE99A26CA95E3007F1119 /* Models */,
+				B0ACE99B26CA95EA007F1119 /* Controllers */,
 				B0ACE98626CA9502007F1119 /* AppDelegate.swift */,
 				B0ACE98826CA9502007F1119 /* SceneDelegate.swift */,
-				B0ACE98A26CA9502007F1119 /* ViewController.swift */,
 				B0ACE98C26CA9502007F1119 /* Main.storyboard */,
 				B0ACE98F26CA9503007F1119 /* Assets.xcassets */,
 				B0ACE99126CA9503007F1119 /* LaunchScreen.storyboard */,
 				B0ACE99426CA9503007F1119 /* Info.plist */,
 			);
 			path = "werkstuk1-ios-2021-YoniCelen";
+			sourceTree = "<group>";
+		};
+		B0ACE99A26CA95E3007F1119 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACE99C26CA9614007F1119 /* Centrum.swift */,
+				B0ACE99E26CA961F007F1119 /* Address.swift */,
+				B0ACE9A026CA962F007F1119 /* Coordinates.swift */,
+				B0ACE9A226CA9642007F1119 /* CustomAnnotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0ACE99B26CA95EA007F1119 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0ACE9A426CA9653007F1119 /* MapViewController.swift */,
+				B0ACE9A626CA9669007F1119 /* CentraTableViewController.swift */,
+				B0ACE9A826CA9679007F1119 /* CentrumTableViewCell.swift */,
+				B0ACE9AA26CA9683007F1119 /* CentrumDetailView.swift */,
+				B0ACE9AC26CA9695007F1119 /* LargeImageViewController.swift */,
+				B0ACE9AE26CA96AD007F1119 /* AddCentrumViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +180,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0ACE98B26CA9502007F1119 /* ViewController.swift in Sources */,
 				B0ACE98726CA9502007F1119 /* AppDelegate.swift in Sources */,
+				B0ACE99D26CA9614007F1119 /* Centrum.swift in Sources */,
+				B0ACE99F26CA961F007F1119 /* Address.swift in Sources */,
+				B0ACE9AF26CA96AD007F1119 /* AddCentrumViewController.swift in Sources */,
+				B0ACE9A926CA9679007F1119 /* CentrumTableViewCell.swift in Sources */,
 				B0ACE98926CA9502007F1119 /* SceneDelegate.swift in Sources */,
+				B0ACE9AD26CA9695007F1119 /* LargeImageViewController.swift in Sources */,
+				B0ACE9A126CA962F007F1119 /* Coordinates.swift in Sources */,
+				B0ACE9AB26CA9683007F1119 /* CentrumDetailView.swift in Sources */,
+				B0ACE9A326CA9642007F1119 /* CustomAnnotation.swift in Sources */,
+				B0ACE9A726CA9669007F1119 /* CentraTableViewController.swift in Sources */,
+				B0ACE9A526CA9653007F1119 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
